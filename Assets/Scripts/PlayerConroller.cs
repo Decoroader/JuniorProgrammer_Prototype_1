@@ -2,17 +2,20 @@
 
 public class PlayerConroller : MonoBehaviour
 {
-    public float vehicleSpeed = 5.0f;
-    public float turnSpeed;
-    public float horizontalInput;
-    public float verticalInput;
+    private float vehicleSpeed = 9.0f;
+    private float turnSpeed = 55.0f;
+    private float horizontalInput;
+    private float verticalInput;
 
     void FixedUpdate()
     {
-        // Move the vahicle forward
+        // control by player
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput =   Input.GetAxis("Vertical");
+
+        // Move the vahicle forward
         transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed * verticalInput);
+        // turn the vehicle right-left
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
