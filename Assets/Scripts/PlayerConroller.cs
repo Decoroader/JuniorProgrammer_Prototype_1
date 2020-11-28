@@ -1,17 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerConroller : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    public float vehicleSpeed = 5.0f;
+
 
     void Update()
     {
         // Move the vahicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime*20f);
+        transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed);
     }
 }
