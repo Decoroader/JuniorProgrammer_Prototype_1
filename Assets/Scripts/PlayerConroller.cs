@@ -12,6 +12,6 @@ public class PlayerConroller : MonoBehaviour
     void Update()
     {
         // Move the vahicle forward
-        transform.Translate(Vector3.forward);
+        transform.Translate(Vector3.forward * Time.deltaTime*20f);
     }
 }
