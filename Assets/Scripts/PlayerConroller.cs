@@ -13,7 +13,7 @@ public class PlayerConroller : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput =   Input.GetAxis("Vertical");
 
-        // Move the vahicle forward
+        // Move the vehicle forward
         transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed * verticalInput);
         // turn the vehicle right-left
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
