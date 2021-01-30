@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PropellerRotation : MonoBehaviour
 {
-    private Vector3 rotationSpeed = new Vector3(0, 0, 45.0f);
+    [SerializeField] private Vector3 rotationSpeed = new Vector3(0, 0, 45.0f);
     
 
     void FixedUpdate()

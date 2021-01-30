@@ -2,8 +2,8 @@
 
 public class PlayerConroller : MonoBehaviour
 {
-    private float vehicleSpeed = 9.0f;
-    private float turnSpeed = 55.0f;
+    [SerializeField] private float vehicleSpeed = 9.0f;
+    [SerializeField] private float turnSpeed = 55.0f;
     private float horizontalInput;
     private float verticalInput;
 
