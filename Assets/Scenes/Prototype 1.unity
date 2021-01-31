@@ -1165,7 +1165,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518056311}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &518056314
 Camera:
   m_ObjectHideFlags: 0
@@ -3331,7 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5147126ef402e44b15b901bd89fb4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleSpeed: 9
+  horsePower: 300999
   turnSpeed: 55
 --- !u!54 &1481429027
 Rigidbody:
