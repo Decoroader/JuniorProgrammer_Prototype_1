@@ -7,11 +7,15 @@ public class PlayerConroller : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody vehicleRb;
+    [SerializeField]private GameObject centerOfMass;
 
-	private void Start()
+
+    private void Start()
 	{
         vehicleRb = GetComponent<Rigidbody>();
-	}
+        vehicleRb.centerOfMass = centerOfMass.transform.position;
+
+    }
 
 	void FixedUpdate()
     {
