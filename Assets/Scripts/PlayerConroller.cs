@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class PlayerConroller : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI speedometerText;
+    [SerializeField] private TextMeshProUGUI rpmText;
+
     [SerializeField] private float horsePower = 300999.0f;
     [SerializeField] private float turnSpeed = 55.0f;
     private float horizontalInput;
@@ -9,6 +13,8 @@ public class PlayerConroller : MonoBehaviour
     private Rigidbody vehicleRb;
     [SerializeField]private GameObject centerOfMass;
 
+    [SerializeField] private float speed;
+    [SerializeField] private float rpm;
 
     private void Start()
 	{
@@ -28,5 +34,9 @@ public class PlayerConroller : MonoBehaviour
         vehicleRb.AddRelativeForce(Vector3.forward * horsePower * verticalInput);
         // turn the vehicle right-left
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+        speed = Mathf.Round(vehicleRb.velocity.magnitude * 3.6f); // 2.37f mph
+        speedometerText.SetText("Speed: " + speed + " kph");
+        rpm = (speed % 30) * 40;
+        rpmText.SetText("RPM: " + rpm);
     }
 }
