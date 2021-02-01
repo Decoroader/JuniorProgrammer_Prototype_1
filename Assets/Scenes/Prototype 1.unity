@@ -3386,7 +3386,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_firstOverflowCharacterIndex: -1
@@ -3709,8 +3709,12 @@ MonoBehaviour:
   horsePower: 290999
   turnSpeed: 55
   centerOfMass: {fileID: 2144113877}
-  speed: 0
-  rpm: 0
+  allWheels:
+  - {fileID: 408687821}
+  - {fileID: 2031903014}
+  - {fileID: 2090911781}
+  - {fileID: 1546584492}
+  wheelsOnGround: 0
 --- !u!54 &1481429027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5340,7 +5344,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_firstOverflowCharacterIndex: -1
@@ -5508,7 +5512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144113877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.73, z: -1}
+  m_LocalPosition: {x: 0, y: 2.11, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1481429031}
