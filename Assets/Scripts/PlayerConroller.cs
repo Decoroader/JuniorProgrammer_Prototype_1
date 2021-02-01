@@ -37,7 +37,12 @@ public class PlayerConroller : MonoBehaviour
         if (IsOnGround())
         {
             // Move the vehicle forward
-            vehicleRb.AddRelativeForce(Vector3.forward * horsePower * verticalInput);
+            //vehicleRb.AddRelativeForce(Vector3.forward * horsePower * verticalInput);
+            foreach (var wheel in allWheels)
+            {
+                wheel.motorTorque = horsePower * verticalInput;
+            }
+
             // turn the vehicle right-left
             transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 

@@ -3097,6 +3097,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 731202832, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
+      propertyPath: m_Size.z
+      value: 5.489013
+      objectReference: {fileID: 0}
+    - target: {fileID: 731202832, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
+      propertyPath: m_Center.z
+      value: -0.5493715
+      objectReference: {fileID: 0}
+    - target: {fileID: 731202833, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
+      propertyPath: m_Size.z
+      value: 6.265284
+      objectReference: {fileID: 0}
+    - target: {fileID: 731202833, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
+      propertyPath: m_Center.z
+      value: -0.34460044
+      objectReference: {fileID: 0}
     - target: {fileID: 1788622503, guid: aea2a6cdcc9d7944090d528486ebaee1, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -3706,7 +3722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedometerText: {fileID: 1340815860}
   rpmText: {fileID: 2127853949}
-  horsePower: 290999
+  horsePower: 5509
   turnSpeed: 55
   centerOfMass: {fileID: 2144113877}
   allWheels:
@@ -5512,7 +5528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144113877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.11, z: -1}
+  m_LocalPosition: {x: 0, y: 1.19, z: -0.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1481429031}
